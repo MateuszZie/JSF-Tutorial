@@ -5,6 +5,7 @@
  */
 package pl.mz.domain;
 
+import java.util.ArrayList;
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Named;
 import lombok.Data;
@@ -18,6 +19,7 @@ import lombok.Data;
 @Data
 public class InputText {
     private String name;
+    private ArrayList<String> names;
     
     public String start(){
         return "index";
