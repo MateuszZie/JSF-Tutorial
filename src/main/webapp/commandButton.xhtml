@@ -3,15 +3,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://java.sun.com/jsf/html">
     <h:head>
-        <title>JSF YT Tutorial</title>    
+        <title>Command Button</title>    
     </h:head>
     <h:body style="padding: 5px; letter-spacing: 1px; line-height: 30px">
-        Hello in Tutorial
+        <h3>Command Button example</h3>
         <br/>
-        <h:link outcome="inputText" value="Input text example"/>
-        <br/>
-        <h:link outcome="inpuSecret" value="Input secret example"/>
-        <br/>
-        <h:link outcome="commandButton" value="Command Button example"/>
+        <h:form>
+            <h:commandButton value="Click Me" action="#{inputText.start}"/>
+        </h:form>
     </h:body>
 </html>

@@ -18,4 +18,8 @@ import lombok.Data;
 @Data
 public class InputText {
     private String name;
+    
+    public String start(){
+        return "index";
+    }
 }
