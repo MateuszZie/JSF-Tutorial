@@ -11,6 +11,7 @@ import java.util.Map;
 import javax.annotation.PostConstruct;
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Named;
+import lombok.AllArgsConstructor;
 import lombok.Data;
 
 /**
@@ -36,4 +37,21 @@ public class InputText {
         mapedNames.put("C++", "Programing in C++");
         mapedNames.put("Java", "Programing in Java");
     }
+    
+    public ArrayList<Student> getStudnets(){
+        ArrayList<Student> students = new ArrayList<>();
+        Student student = new Student("Mateusz", "Kierownik");
+        Student student2 = new Student("Krustian", "Pracownik");
+        students.add(student);
+        students.add(student2);
+        return students;
+    }
+            
+@Data   
+@AllArgsConstructor
+public class Student {
+    private String name, roll;
 }
+}
+
+
