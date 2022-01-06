@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Data Time Converter</title>    
+    </h:head>
+    <h:body style="padding: 5px; letter-spacing: 1px; line-height: 30px">
+        <h3>Data Time Converter example</h3>
+        <br/>
+        <h:form>
+            <h:inputText value="#{inputText.date}" converterMessage="Date must be dd-MM-yyyy Fromat">
+                <f:convertDateTime pattern="dd-MM-yyyy"/>
+            </h:inputText> 
+            <h:commandButton value="Click Me" /><br/>
+            <h:outputText value="#{inputText.date}"/>
+        </h:form>
+    </h:body>
+</html>

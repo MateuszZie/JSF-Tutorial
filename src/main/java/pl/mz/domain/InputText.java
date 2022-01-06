@@ -6,6 +6,7 @@
 package pl.mz.domain;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import javax.annotation.PostConstruct;
@@ -25,6 +26,7 @@ public class InputText {
     private String name;
     private ArrayList<String> names;
     private Map<String, String> mapedNames;
+    private Date date;
     
     public String start(){
         return "index";
