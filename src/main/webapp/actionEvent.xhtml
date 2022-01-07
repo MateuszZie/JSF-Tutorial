@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Action Event</title>    
+    </h:head>
+    <h:body style="padding: 5px; letter-spacing: 1px; line-height: 30px">
+        <h3>Action Event example.</h3>
+        <br/>
+        <h:form>
+        <h:commandButton id="firstButton" value="First action">
+            <f:actionListener type="pl.mz.ActionListner.ActionListner"/>
+        </h:commandButton><br/>
+        <h:commandButton id="secondButton" value="Second action" actionListener="#{inputText.acctionListner}"/>
+    </h:form>
+    </h:body>
+</html>

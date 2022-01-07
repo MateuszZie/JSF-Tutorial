@@ -11,6 +11,7 @@ import java.util.HashMap;
 import java.util.Map;
 import javax.annotation.PostConstruct;
 import javax.enterprise.context.RequestScoped;
+import javax.faces.event.ActionEvent;
 import javax.inject.Named;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -38,6 +39,10 @@ public class InputText {
         
         mapedNames.put("C++", "Programing in C++");
         mapedNames.put("Java", "Programing in Java");
+    }
+    
+    public void acctionListner(ActionEvent event){
+        System.out.println("Mesage from buton id: " + event.getComponent().getId());
     }
     
     public ArrayList<Student> getStudnets(){
