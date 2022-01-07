@@ -24,6 +24,16 @@
               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
               xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_3.xsd">
 
+    <application>
+        <system-event-listener>
+            <system-event-listener-class>pl.mz.ActionListner.SystemEvent</system-event-listener-class>
+            <system-event-class>javax.faces.event.PostConstructApplicationEvent</system-event-class>
+        </system-event-listener>
+        <system-event-listener>
+            <system-event-listener-class>pl.mz.ActionListner.SystemEvent</system-event-listener-class>
+            <system-event-class>javax.faces.event.PreDestroyApplicationEvent</system-event-class>
+        </system-event-listener>
+    </application>
     <lifecycle>
         <phase-listener>
             pl.mz.ActionListner.PhaseEvent
