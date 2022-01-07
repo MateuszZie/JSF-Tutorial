@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>JSF CSS</title>
+        <style type="text/css">
+            .format {
+                color: blue;
+                font-weight: bold;
+                font-size: small;
+               
+            }
+        </style>
+        <link href="./Css/demo.css" rel="stylesheet" type="text/css"/>
+    </h:head>
+    <h:body style="padding: 5px; letter-spacing: 1px; line-height: 30px">
+        <h3>JSF CSS example</h3>
+        <br/>
+        <h:form>
+            <h:inputText style="color: red; font-weight: bold; font-size: large" />
+            <h:inputText styleClass="format"/>
+            <h:inputText styleClass="myformat" />
+        </h:form>
+    </h:body>
+</html>
