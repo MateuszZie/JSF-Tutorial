@@ -21,7 +21,7 @@ public class Login {
     
     public String login(){
         if(name.equals("mateusz") && password.equals("mateusz")){
-            return "index";
+            return "indexx";
         }else{
             return "error";
         }
